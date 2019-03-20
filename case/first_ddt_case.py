@@ -7,16 +7,17 @@ __author__ = 'chunhua.huang'
 __mtime__ = '2018/12/18'
 
 """
-import ddt
-import sys
-sys.path.append('D:\F\pyworkspace\SeleniumPython')
-from business.register_business import RegisterBusiness
-from selenium import webdriver
+
 import unittest
 import time
 import os
+import ddt
+import sys
+from business.register_business import RegisterBusiness
+from selenium import webdriver
 from HTMLTestRunner import HTMLTestRunner
 from util.excel_util import ExcelUtil
+sys.path.append('D:\F\pyworkspace\SeleniumPython')
 
 ex = ExcelUtil()
 data = ex.get_data()

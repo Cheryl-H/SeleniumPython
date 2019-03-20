@@ -26,6 +26,7 @@ class FirstCase(unittest.TestCase):
         self.login = RegisterBusiness(self.driver)
         self.logger.debug('open the chrome')
 
+    # 每条用例结束时，如果有错误就截图保存到指定路径下
     def tearDown(self):
         time.sleep(3)
         for method_name, error in self._outcome.errors:
